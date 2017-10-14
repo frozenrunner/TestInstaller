@@ -1,0 +1,35 @@
+﻿<Page x:Class="Installer.ScriptSetupPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      Height="350" Width="200"
+      HorizontalAlignment="Right"
+      Background="White"
+	Title="ScriptSetupPage">
+
+    <Grid>
+        <StackPanel Height="350" >
+            <Label Content="Server Name" Padding="0,2" Width="150"/>
+            <TextBox x:Name="TxtServerName" TextWrapping="Wrap" Width="150" Text="DEMOGP-MICHAEL"/>
+            <Label Content="Primary Database Name" Padding="0,2" Width="150"/>
+            <TextBox x:Name="TxtPrimaryDbName" TextWrapping="Wrap" Width="150"/>
+            <Label Content="GP Database Name" Padding="0,2" Width="150"/>
+            <TextBox x:Name="TxtGpDbName" TextWrapping="Wrap" Width="150" Text="DEMO"/>
+            <Label Content="User Name" Padding="0,2" Width="150"/>
+            <TextBox x:Name="TxtUserName" TextWrapping="Wrap" Width="150" Text="sa"/>
+            <Label Content="Password" Padding="0,2" Width="150"/>
+            <PasswordBox x:Name="TxtPassword" Width="150" Password="WAzzup"/>
+            <CheckBox Content="Create New Account" Margin="25,10" Name="ChkNewAccount"  Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+            <StackPanel Name="PnlNewAccount"  Margin="25,0" Orientation="Vertical" Visibility="Hidden">
+                <Label Content="Account Name" Padding="0,2" Width="150"/>
+                <TextBox x:Name="TxtLoginUserName" TextWrapping="Wrap" Width="150"/>
+                <Label Content="Account Password" Padding="0,2" Width="150"/>
+                <PasswordBox x:Name="TxtLoginPassword" Width="150"/>
+            </StackPanel>
+        </StackPanel>
+        <ProgressBar HorizontalAlignment="Left" Height="10" IsIndeterminate="True" Margin="52,219,0,0" Name="ExtractFilesProgress" VerticalAlignment="Top" Visibility="Hidden" Width="100" />
+        <Button Name="BtnNext" Content="Next" IsDefault="True" Margin="110,315,10,10" Click="CreateDbTest_OnClick"/>
+    </Grid>
+</Page>

@@ -1,0 +1,13 @@
+﻿<Page x:Class="Installer.InstallerFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      Height="350" Width="200"
+	Title="InstallerFrame">
+    <Grid>
+        <Image Grid.Column="0" Source="Images/weyland-yutani-logoEDIT.png" Stretch="Fill"  Width="180"
+               Height="154" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,100,10,96"/>
+    </Grid>
+</Page>

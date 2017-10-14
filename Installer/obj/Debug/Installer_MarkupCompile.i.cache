@@ -1,0 +1,20 @@
+﻿Installer
+
+
+winexe
+C#
+.cs
+C:\Users\mhorlick\Documents\Visual Studio 2013\Projects\Installer\Installer\DemoInstaller\Installer\obj\Debug\
+Installer
+none
+false
+DEBUG;TRACE
+C:\Users\mhorlick\Documents\Visual Studio 2013\Projects\Installer\Installer\DemoInstaller\Installer\App.xaml
+71014314071
+
+151521959789
+171954014214
+ApplicationPoolSetup.xaml;FinishedInstallPage.xaml;MainPage.xaml;MainWindow.xaml;LogoFrame.xaml;ScriptSetupPage.xaml;WebsiteSetup.xaml;
+
+False
+

@@ -1,0 +1,11 @@
+﻿<Window x:Class="Installer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" MinHeight="350" MinWidth="400"
+        SizeToContent="WidthAndHeight">
+    <DockPanel>
+        <Frame x:Name="InstallerFrame" NavigationUIVisibility="Hidden" Width="200"/>
+        <Rectangle Fill="#ababab" HorizontalAlignment="Left" Margin="0, 10" Stroke="Gray" Width="1"/>
+        <Frame x:Name="NavigationFrame" NavigationUIVisibility="Hidden" Width="200"/>
+    </DockPanel>
+</Window>
